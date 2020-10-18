@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="./Js/script.js"></script>
+</head>
+<body>
+
+
+    <form class="form-group" id="custom-pizza">
+        <div class="order">
+            <div class="row">
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="./img/pizza3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sizes of pizza</h5>
+                            <p class="card-text">Choose the size of Pizza:</p>
+                            <select required class="form-control" id="size">
+                                <option></option>
+                                <option value="small-pizza">small (500)</option>
+                                <option value="medium-pizza">medium (750)</option>
+                                <option value="large-pizza">large (1000)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="./img/pizza1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crust</h5>
+                            <p class="card-text">Choose a crust:</p>
+                            <select required class="form-control" id="crust">
+                                <option></option>
+                                <option value="cheese-filled">Cheese filled (100)</option>
+                                <option value="thick">Thick (150)</option>
+                                <option value="stuffed">Stuffed (150)</option>
+                                <option value="crispy">Crispy (150)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="./img/pizza2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Toppings</h5>
+                            <p class="card-text">Choose toppings:</p>
+                            <select required class="form-control" id="toppings">
+                                <option></option>
+                                <option value="pepperoni">Pepperoni (100)</option>
+                                <option value="sausage">Sausage (150)</option>
+                                <option value="bacon">Bacon (200)</option>
+                                <option value="mushrooms">Mushrooms (150)</option>
+                                <option value="chicken">Chicken (150)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+        <input type="number" id="amount" placeholder="Number of pizzas"required>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="container">
+       <h1>pizza inn</h1>
+       <div class="row">
+           <div class="col-md-6">
+               <h2>Order Pizza</h2>
+               <form action="" id="new-pizza">
+                   <div class="form-group">
+                       <label for="pizza-size">Size</label>
+                       <input type="text" class="form-control" id="pizza-size">
+                     </div>
+                     <div class="form-group">
+                         <label for="pizza-crust">Crust</label>
+                         <input type="text" class="form-control" id="pizza-crust">
+                        </div>
+                    <div class="form-group">
+                        <label for="pizza-topping">Topping</label>
+                        <input type="text" class="form-control" id="pizza-topping">
+
+                    </div>
+
+                        <button type="submit" class="btn">Order</button>
+
+               </form>
+               <h2>Pizza</h2>
+               <ul id="pizza">
+
+               </ul>
+
+               
+
+
+           </div>
+
+       </div>
+
+   </div>  -->
+</body>
+</html>
