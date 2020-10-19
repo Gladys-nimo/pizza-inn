@@ -40,16 +40,16 @@ $(document).ready(function() {
       }
     };
     function address(address) {
-        this.address = address;
-        this.deliveryAddress = (address);
+      this.address = address;
+      this.deliveryAddress = (address);
+    }
+    Order.prototype.finalCost = function() {
+      var cartTotalPrice = [];
+      for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
+        cartTotalPrice += totalPriceArray[arrayElement];
       }
-      Order.prototype.finalCost = function() {
-        var cartTotalPrice = [];
-        for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
-          cartTotalPrice += totalPriceArray[arrayElement];
-        }
-        return cartTotalPrice;
-      };
+      return cartTotalPrice;
+    };
       
       $(".btn.check-out").click(function() {
       });
