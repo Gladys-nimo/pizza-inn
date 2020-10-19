@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizza</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/w3.css">
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
   <script src="./Js/script.js"></script>
+  
+
 </head>
 <body>
+    
+    <!-- <nav>
+        <ul>
+            <button>🞬</button>
+          <!-- <li> 
+            <!-- link one -->
+            <!-- <a href="#aboutus"> About Us </a>
+          </li>
+          <li>
+            <!-- link two -->
+             <!-- <a href="#menu"> Menu </a>
+          </li>
+          <li> -->
+            <!-- link three -->
+            <!-- <a href="#ordernow"> Order now </a>
+          </li>
+          <li> -->
+            <!-- link four -->
+            <!-- <a href="#contacts"> Contacts </a>
+          </li>
+        </ul> -->
+      <!-- //</nav> // -->
+      <!--header section------>
+      <header class="header">
+          <div class="hero">
+              <h1 class=" title">Tehilla pizza inn</h1>
+              <a href="#" class="hero-button pulsate">ORDER NOW</a>
+          </div>
+
+      </header>
+      <!--end of header section-------->
+     <!--about container------------->
+      <div class="about-container"><h1>Tehilla pizza inn</h1>
+          <!--img-->
+          <img src="./img/31332492_rVaH-g5thfHeTYZU4MsR80iIM3KU8SkAUVSZkVZ-Gjg.jpg" alt="">
+      <div class="about-text">
+        <p>About us</p>
+        <p>FTF pizza inn</p>
+        <p>This pizza was inn, was started by Faith fit, who was a tourist in Kenya. 
+        Faith thought of the most common snack in town, which was pizza</p>
+		<p>FTF has been considered the best pizza inn in town with the coolest breeze to enjoy your snack
+            We offer great services to our customer and the feedback has been positive all the time
+        </p>
+        </div>
+        </div>
+
+
+
 
 
     <form class="form-group" id="custom-pizza">
@@ -26,16 +77,16 @@
                             <p class="card-text">Choose the size of Pizza:</p>
                             <select required class="form-control" id="size">
                                 <option></option>
-                                <option value="small-pizza">small (500)</option>
-                                <option value="medium-pizza">medium (750)</option>
-                                <option value="large-pizza">large (1000)</option>
+                                <option value="small-pizza">small (350)</option>
+                                <option value="medium-pizza">medium (700)</option>
+                                <option value="large-pizza">large (1050)</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-9">
                     <div class="card">
-                        <img src="./img/pizza1.jpeg" class="card-img-top" alt="...">
+                        <img src="./img/pexels-photo-4109077.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Crust</h5>
                             <p class="card-text">Choose a crust:</p>
@@ -67,84 +118,47 @@
                     </div>
                 </div>
             </div>
-        </div><br><br>
-        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+        </div>
         <input type="number" id="amount" placeholder="Number of pizzas"required>
-    </form>
+  <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+</form>
+    <button class="btn btn-orange add">Add</button>
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- <div class="container">
-       <h1>pizza inn</h1>
-       <div class="row">
-           <div class="col-md-6">
-               <h2>Order Pizza</h2>
-               <form action="" id="new-pizza">
-                   <div class="form-group">
-                       <label for="pizza-size">Size</label>
-                       <input type="text" class="form-control" id="pizza-size">
-                     </div>
-                     <div class="form-group">
-                         <label for="pizza-crust">Crust</label>
-                         <input type="text" class="form-control" id="pizza-crust">
-                        </div>
-                    <div class="form-group">
-                        <label for="pizza-topping">Topping</label>
-                        <input type="text" class="form-control" id="pizza-topping">
-
-                    </div>
-
-                        <button type="submit" class="btn">Order</button>
-
-               </form>
-               <h2>Pizza</h2>
-               <ul id="pizza">
-
-               </ul>
-
-               
-
-
-           </div>
-
-       </div>
-
-   </div>  -->
+ <div class="col-xs-4" id="price-content">
+    <h1 class="page-header">Cart</h1>
+    <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+    <div id="deliver" class="deliver">
+        <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+        <form id="address-form">
+            <div class="col-xs-6">
+                <label for="first-name"></label>
+                <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                <button class="btn btn-dark complete" type="submit">Enter</button>
+                <h3><span id="delivery-option"></span></h3>
+            </div>
+        </form>
+    </div>
+    </div>
+    
 </body>
 </html>
+              
+    <!-- <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Home delivery?</button>
+              </form><div class="delivery">
+                <form action=""> -->
+                  <!-- <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                  </div>
+                </form>
+    
+  <!-- <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+        <input type="number" id="amount" placeholder="Number of pizzas"required> -->
+    
+            
+           
+        

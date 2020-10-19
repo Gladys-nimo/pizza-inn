@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#order-details").hide();
     $("#deliver").hide();
     // Business Logic
-    var totalPriceArray = [];
+    var totalPriceArray =[];
     function Order(size, crust, toppings, amount) {
       this.size = size;
       this.crust = crust;
@@ -39,7 +39,7 @@ $(document).ready(function() {
         this.pizzaPrice += 150;
       }
     };
-    function Address(address) {
+    function address(address) {
         this.address = address;
         this.deliveryAddress = (address);
       }
@@ -50,6 +50,14 @@ $(document).ready(function() {
         }
         return cartTotalPrice;
       };
+      // Order.prototype.finalCost = function() {
+       
+      //   var cartTotalPrice = [];
+      //   for (var arrayElement =  arrayElement < totalPriceArray.length; arrayElement++) {
+      //     cartTotalPrice += totalPriceArray[arrayElement];
+      //   }
+      //   return cartTotalPrice;
+      // };
       $(".btn.check-out").click(function() {
       });
       $("form#custom-pizza").submit(function(event) {
@@ -69,7 +77,7 @@ $(document).ready(function() {
       $("#submit-pizza").click(function() {
         $("#deliver").toggle();
       });
-    
+
       $("#checkout-btn").click(function() {
         $("#order-details").toggle();
       });
@@ -82,3 +90,38 @@ $(document).ready(function() {
       });
     });
     
+
+      // $("button.addPizza").click(function(){
+      //   let pname = $(".name option:selected").val();
+      //   let psize = $("#size option:selected").val();
+      //   let pcrust = $("#crust option:selected").val();
+      //   let ptopping = [];
+      //   $.each($("input[name='toppings']:checked"), function(){            
+      //       ptopping.push($(this).val());
+      //   });
+
+
+      // $("button#checkout").click(function(){ 
+      //   $("button#checkout").hide();
+      //   $("button.addPizza").hide();
+      //   $("button.deliver").slideDown(1000);
+      //   $("#addedprice").slideDown(1000);
+      //   console.log("Your total bills is sh. "+checkoutTotal);
+      //   $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      // });
+    
+     
+
+    // $(document).ready(function(){
+  
+    //     $("button").click(function(){
+      
+    //       if($("button").text() == "☰"){
+    //         $("button").text("🞬");
+    //       }else{
+    //         $("button").text("☰");
+    //       }
+          
+    //       $("li").toggle("slow");
+    //     });  
+    //   });
