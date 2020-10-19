@@ -38,34 +38,7 @@ $(document).ready(function() {
       } else if (this.toppings === "chicken") {
         this.pizzaPrice += 150;
       }
-    // Order.prototype.pizzaCost = function() {
-    //   if (this.size === "small-pizza") {
-    //     this.pizzaPrice += 500;
-    //   } else if (this.size === "medium-pizza") {
-    //     this.pizzaPrice += 750;
-    //   } else if (this.size === "large-pizza") {
-    //     this.pizzaPrice += 1000;
-    //   }
-    //   if (this.crust === "cheese-filled") {
-    //     this.pizzaPrice += 100;
-    //   } else if (this.crust === "thick") {
-    //     this.pizzaPrice += 150;
-    //   } else if (this.crust === "stuffed") {
-    //     this.pizzaPrice += 150;
-    //   } else if (this.crust === "crispy") {
-    //     this.pizzaPrice += 150;
-    //   }
-    //   if (this.toppings === "pepperoni") {
-    //     this.pizzaPrice += 100;
-    //   } else if (this.toppings === "sausage") {
-    //     this.pizzaPrice += 150;
-    //   } else if (this.toppings === "bacon") {
-    //     this.pizzaPrice += 200;
-    //   } else if (this.toppings === "mushrooms") {
-    //     this.pizzaPrice += 150;
-    //   } else if (this.toppings === "chicken") {
-    //     this.pizzaPrice += 150;
-    //   }
+    
     };
     function address(address) {
       this.address = address;
@@ -78,23 +51,39 @@ $(document).ready(function() {
       }
       return cartTotalPrice;
     };
+    $(".btn.check-out").click(function() {
+    });
+    $("form#custom-pizza").submit(function(event) {
+      event.preventDefault();
+      var size = $("select#size").val();
+      var crust = $("select#crust").val();
+      var toppings = $("select#toppings").val();
+      var pizzaDetails = (size + " - " + crust + " - " + toppings);
+      var newPizzaOrder = new Order(size, crust, toppings);
+      newPizzaOrder.pizzaCost();
+      totalPriceArray.push(newPizzaOrder.pizzaPrice);
+      // $("#pizza-details").hide();
+      $("#final-cost").text(newPizzaOrder.finalCost());
+      $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+      // $("#size, #crust, #toppings,").val("");
+    });
       
-      $(".btn.check-out").click(function() {
-      });
-      $("form#custom-pizza").submit(function(event) {
-        event.preventDefault();
-        var size = $("select#size").val();
-        var crust = $("select#crust").val();
-        var toppings = $("select#toppings").val();
-        var pizzaDetails = (size + " - " + crust + " - " + toppings);
-        var newPizzaOrder = new Order(size, crust, toppings);
-        newPizzaOrder.pizzaCost();
-        totalPriceArray.push(newPizzaOrder.pizzaPrice);
-        // $("#pizza-details").hide();
-        $("#final-cost").text(newPizzaOrder.finalCost());
-        $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-        // $("#size, #crust, #toppings,").val("");
-      });
+      // $(".btn.check-out").click(function() {
+      // });
+      // $("form#custom-pizza").submit(function(event) {
+      //   event.preventDefault();
+      //   var size = $("select#size").val();
+      //   var crust = $("select#crust").val();
+      //   var toppings = $("select#toppings").val();
+      //   var pizzaDetails = (size + " - " + crust + " - " + toppings);
+      //   var newPizzaOrder = new Order(size, crust, toppings);
+      //   newPizzaOrder.pizzaCost();
+      //   totalPriceArray.push(newPizzaOrder.pizzaPrice);
+      //   // $("#pizza-details").hide();
+      //   $("#final-cost").text(newPizzaOrder.finalCost());
+      //   $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+      //   // $("#size, #crust, #toppings,").val("");
+      // });
       $("#submit-pizza").click(function() {
         $("#deliver").toggle();
       });
