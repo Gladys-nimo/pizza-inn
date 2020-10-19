@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet"   
+
 
 *{
   margin: 0;
@@ -161,11 +161,12 @@ margin-top: 7% auto; */
   text-decoration: orchid;
 }
 .about-container img{
-  height: 150px;
+  height: 250px;
+  border-radius: 25px;
 }
 .about-text {
   width: 700px
-  font-family: 'cabin', serif;
+  
 }
 .about-head{
   text-decoration: orchid;
