@@ -67,27 +67,11 @@ $(document).ready(function() {
       $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
       // $("#size, #crust, #toppings,").val("");
     });
+    
+    $("#submit-pizza").click(function() {
+      $("#deliver").toggle();
+    });
       
-      // $(".btn.check-out").click(function() {
-      // });
-      // $("form#custom-pizza").submit(function(event) {
-      //   event.preventDefault();
-      //   var size = $("select#size").val();
-      //   var crust = $("select#crust").val();
-      //   var toppings = $("select#toppings").val();
-      //   var pizzaDetails = (size + " - " + crust + " - " + toppings);
-      //   var newPizzaOrder = new Order(size, crust, toppings);
-      //   newPizzaOrder.pizzaCost();
-      //   totalPriceArray.push(newPizzaOrder.pizzaPrice);
-      //   // $("#pizza-details").hide();
-      //   $("#final-cost").text(newPizzaOrder.finalCost());
-      //   $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-      //   // $("#size, #crust, #toppings,").val("");
-      // });
-      $("#submit-pizza").click(function() {
-        $("#deliver").toggle();
-      });
-
       $("#checkout-btn").click(function() {
         $("#order-details").toggle();
       });
