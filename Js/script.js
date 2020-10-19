@@ -50,14 +50,7 @@ $(document).ready(function() {
         }
         return cartTotalPrice;
       };
-      // Order.prototype.finalCost = function() {
-       
-      //   var cartTotalPrice = [];
-      //   for (var arrayElement =  arrayElement < totalPriceArray.length; arrayElement++) {
-      //     cartTotalPrice += totalPriceArray[arrayElement];
-      //   }
-      //   return cartTotalPrice;
-      // };
+      
       $(".btn.check-out").click(function() {
       });
       $("form#custom-pizza").submit(function(event) {
@@ -90,38 +83,3 @@ $(document).ready(function() {
       });
     });
     
-
-      // $("button.addPizza").click(function(){
-      //   let pname = $(".name option:selected").val();
-      //   let psize = $("#size option:selected").val();
-      //   let pcrust = $("#crust option:selected").val();
-      //   let ptopping = [];
-      //   $.each($("input[name='toppings']:checked"), function(){            
-      //       ptopping.push($(this).val());
-      //   });
-
-
-      // $("button#checkout").click(function(){ 
-      //   $("button#checkout").hide();
-      //   $("button.addPizza").hide();
-      //   $("button.deliver").slideDown(1000);
-      //   $("#addedprice").slideDown(1000);
-      //   console.log("Your total bills is sh. "+checkoutTotal);
-      //   $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
-      // });
-    
-     
-
-    // $(document).ready(function(){
-  
-    //     $("button").click(function(){
-      
-    //       if($("button").text() == "☰"){
-    //         $("button").text("🞬");
-    //       }else{
-    //         $("button").text("☰");
-    //       }
-          
-    //       $("li").toggle("slow");
-    //     });  
-    //   });
