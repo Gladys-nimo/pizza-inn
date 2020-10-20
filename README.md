@@ -5,6 +5,8 @@
 }
 ## Description
 {This is a group projects that allows users to order pizza online.It also enables the user to choose the kind of Pizza that he wants i,e in terms of size, the type of pizza crust and the kind of toppings that the user would love to be added }
+## live link
+https://gladys-nimo.github.io/pizza-inn/
 ## Setup/Installation Requirements
 *  install Jquery latest version
 * install Bootsrap the latest version
